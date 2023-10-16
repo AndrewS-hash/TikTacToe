@@ -1,4 +1,4 @@
-Andrew J Schmidt | Sep 6th, 2023
+Andrew J Schmidt | Sep 6th, 2023 - Oct 16th, 2023
 TicTacToe HTML/JS game
 
 Original code gotten from:
@@ -13,4 +13,6 @@ Run:
 Files and Dependencies:
 - TicTacToe.html
 - tic.css
+- slider.css
 - tic.js
+- tac.js
