@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>TikTakToe</title>
     <link rel="stylesheet" type="text/css" href="tic.css">
+    <link rel="stylesheet" type="text/css" href="slider.css">
     <script src='tic.js'></script>
+    <script src='tac.js'></script>
 </head>
 
 <body>
@@ -19,6 +21,18 @@
                 <b>Player X </b>And Second Player as
                 <b>Player 0</b>
             </p>
+            <br><br>
+            <div>
+                <p id="ins">Starting Player: </p>
+                <div class="button b2" id="button-14" style="top: 20px;">
+                    
+                    <input type="checkbox" class="checkbox" id="toggle" onclick="updatePlayer()" />
+                    <div class="knobs">
+                        <span></span>
+                    </div>
+                    <div class="layer"></div>
+                </div>
+            </div>
             <br><br>
             <div class="ui">
                 <div class="row">

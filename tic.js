@@ -38,25 +38,10 @@ function checkForWin(boxes, btns) {
 function main() {
 	var b = [];
 	var btn = [];
-	b[0] = document.getElementById('b1').value;
-	b[1] = document.getElementById('b2').value;
-	b[2] = document.getElementById('b3').value;
-	b[3] = document.getElementById('b4').value;
-	b[4] = document.getElementById('b5').value;
-	b[5] = document.getElementById('b6').value;
-	b[6] = document.getElementById('b7').value;
-	b[7] = document.getElementById('b8').value;
-	b[8] = document.getElementById('b9').value;
-
-	btn.push(document.getElementById("b1"));
-	btn.push(document.getElementById("b2"));
-	btn.push(document.getElementById("b3"));
-	btn.push(document.getElementById("b4"));
-	btn.push(document.getElementById("b5"));
-	btn.push(document.getElementById("b6"));
-	btn.push(document.getElementById("b7"));
-	btn.push(document.getElementById("b8"));
-	btn.push(document.getElementById("b9"));
+	for (let i = 1; i <= 9; i++) {
+		b.push(document.getElementById('b' + i.toString()).value);
+		btn.push(document.getElementById('b' + i.toString()));
+	}
 
 	for (let x of validWins) {
 		checkForWin([b[x[0]], b[x[1]], b[x[2]]], [btn[x[0]], btn[x[1]], btn[x[2]]]);
@@ -80,6 +65,7 @@ function main() {
 		}
 	}
 	turn++;
+	updatePlayer();
 }
 
 
